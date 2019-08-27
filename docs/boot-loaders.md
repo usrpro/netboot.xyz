@@ -29,4 +29,11 @@ Edit `/etc/grub.d/40-custom`:
         linux /netboot.xyz.lkrn
     }
 
+Check if grub generates correct configuration:
+
+    grub-mkconfig
+
+If all seems fine, write the output:
+
+    grub-mkconfig -o /boot/grub/grub.cfg
 
